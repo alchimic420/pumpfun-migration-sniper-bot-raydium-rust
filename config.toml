@@ -1,0 +1,61 @@
+# MOST IMPORTANT CONFIGS
+private_key = []
+buy_amount = 0.05
+snipe_contracts = [
+    "WqteAAXS4j5WdRpBEwRUBse6ANqtHNascduwSnVpump"
+]
+
+# RPC/GRPC/SWQOS/BLOCK ENGINES
+rpc_swqos = "http://basic.swqos.solanavibestation.com/?api_key="    # rpc/swqos
+ws = "ws://basic.swqos.solanavibestation.com/?api_key="             # websocket
+grpc = "http://grpc.solanavibestation.com:10000"            # grpc
+jito_engine = "https://ny.mainnet.block-engine.jito.wtf"    # jito block engine
+blox_engine = "https://ny.solana.dex.blxrbdn.com"           # blox block engine
+temp_engine = "http://nozomi-preview-pit.temporal.xyz/?c="  # temp block engine
+nextblock_engine = "https://ny.nextblock.io"                # nextblock block engine
+
+# AUTH HEADEERS/API KEYS
+bloxroute_auth_header = ""                                  # blox auth
+nextblock_auth_header = ""                                  # nextblock auth
+
+# BUY TIPS/PRIORITY FEES
+jito_tip = 0.002                            # jito tip sol
+blox_tip = 0.002                            # blox tip sol
+temp_tip = 0.002                            # temp tip
+nextblock_tip = 0.002                       # nextblock tip
+jito_priority_fee_lamports_buy = 5          # priority fee jito 
+blox_priority_fee_lamports_buy = 5          # priority fee blox
+temp_priority_fee_lamports_buy = 5          # priority fee temp
+nextblock_priority_fee_lamports_buy = 5     # priority fee nextblock
+swqos_priority_fee_lamports_buy = 5         # priority fee swqos
+
+# SELL TIPS/PRIORITY FEES
+jito_tip_sell = 0.002                       # jito tip sell sol
+jito_priority_fee_lamports_sell = 5         # priority fee jito sell
+
+# OTHER CONFIGS
+swqos_retry_time_ms = 25                    # swqos sleep time in ms between retry attemps
+swqos_retry_count = 5                       # swqos retry attemps count 
+lookup_address_table = ""                   # lookup address table
+jito_tip_address = "ADaUMid9yfUytqMBgopwjb2DTLSokTSzL1zt6iGPaS49"           # jito tip address
+blox_tip_address = "HWEoBxYs7ssKuudEjzjmpfJVX7Dvi7wescFsVx2L5yoY"           # blox tip address
+nextblock_tip_address = "nEXTBLockYgngeRmRrjDV31mGSekVPqZoMGhQEZtPVG"       # blox tip address
+blox_memo_address = "HQ2UUt18uJqKaQFJhgV9zaTdQxUZjNrsKFgoEDquBkcx"          # blox memo address
+temporal_tip_address = "TEMPaMeCRFAS9EKF53Jd6KpHxgL47uWLcpFArU1Fanq"        # temporal tip address
+enable_jito = true
+enable_blox = true
+enable_next = true
+enable_temp = false
+enable_swqos = true
+show_new_pools_in_console = false
+
+# SELL LOGIC
+[sell_logic]
+take_profit = [
+    { profit_percent = 20, sell_percent = 50 },
+    { profit_percent = 40, sell_percent = 100 }
+]
+
+stop_loss = [
+    { loss_percent = 60, sell_percent = 100 }
+]
