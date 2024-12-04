@@ -1,1 +1,1 @@
-# pumpfun-migration-sniper-bot-raydium-rust
+# pumpfun-raydium-migration-sniper-bot-rust
